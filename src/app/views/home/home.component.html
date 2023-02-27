@@ -34,7 +34,7 @@
         <h5 class="ngfor">{{item.title}}</h5>
         <p class="ngfor">{{item.description}}</p>
         <p class="text-end"><strong class="fw-bold">Precio: $ {{item.price}}</strong></p>
-        <button class="btn btn-outline-info"> <i class="fas fa-cart-plus"></i> &nbsp; Agregar producto</button>
+        <button class="btn btn-outline-info" (click)="addToCart(item);"> <i class="fas fa-cart-plus"></i> &nbsp; Agregar producto</button>
       </div>
     </ng-container>
   </div>
