@@ -1,0 +1,36 @@
+.w40{
+  width: 30%;
+  min-height: 100%;
+  background: var(--secundary);
+}
+.offset-11{
+  width: 10%;
+}
+.w60{
+  width: 60%;
+  min-height: 100vh;
+  margin-top: 5%;
+}
+.separador{
+  border-radius: 1px;
+  color: var(--back);
+  font-size: 20px;
+  font-weight: 700;
+  grid-area: auto / 1 / auto / -1;
+  margin: 20px 0 0;
+  border-bottom-color: var(--back);
+}
+.home-wrapper{
+  align-items: center;
+  display: grid;
+  grid-template-columns: 457.656px 457.672px 457.672px;
+  grid-template-rows: 47px 156px 156px 156px 156px 156px 47px 156px 156px 156px 156px 47px 156px 47px 156px 156px 156px 156px 156px 47px 156px 156px 47px 156px ;
+}
+.product-card{
+  align-items: center;
+  background: var(--white-bg);
+  color: var(--back);
+  display: flex;
+  margin: 8px 5px;
+  padding: 5px;
+}

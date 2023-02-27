@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+--color-primary: #fa741c;
+--white: #f9e9d9;
+--black: #253746;
+  --baby-white: #bfd3d9;
+--secundary: #ec9d70;
+--acention: #f7c285;
+  --white-bg: #ffffff;
+  --back: #3d5a73;
+}
+
+@font-face {
+  font-family: 'Candara';
+  src: url("src/assets/fonts/Candara.ttf");
+}
+@font-face {
+  font-family: 'Candara_Bold';
+  src: url("src/assets/fonts/Candara_Bold.ttf");
+}
+@font-face {
+  font-family: 'aquarion';
+  src: url("src/assets/fonts/aquarion.otf");
+}
+*{
+  font-family: Candara, serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--black);
+  font-weight: 300;
+}
+.font-title{
+    font-size: 24px;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+.font-subtitle{
+  font-size: 20px;
+  color: var(--secundary);
+  font-weight: 500;
+}
+.fas{
+  color: var(--color-primary) !important;
+}
