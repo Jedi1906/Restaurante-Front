@@ -1,4 +1,16 @@
-<div class="container text-center margenSuperior">
+
+<div class="card-top container-fluid">
+  <div class="container d-flex margenSuperior">
+    <div class="item">
+      <a [routerLink]="['/agregar-producto']">
+        <i class="fas fa-plus-circle" style="font-size: 50px;"></i> &nbsp;
+        <h5 class="font-subtitle">Agregar productos</h5>
+      </a>
+    </div>
+</div>
+</div>
+
+<div class="container text-center">
   <div class="row">
     <ng-container *ngFor="let item of productList">
       <div class="card col-md-3">
@@ -6,6 +18,9 @@
         <h5 class="ngfor">{{item.title}}</h5>
         <p class="ngfor">{{item.description}}</p>
         <p class="text-end"><strong class="fw-bold">Precio: $ {{item.price}}</strong></p>
+        <a [routerLink]="['/actualizar-producto']"><button class="btn btn-outline-info"> <i class="fas fa-edit"></i> &nbsp; Actualizar producto</button></a>
+        <br>
+        <button class="btn btn-outline-info"> <i class="fas fa-trash-alt"></i> &nbsp; Eliminar producto</button>
       </div>
     </ng-container>
   </div>

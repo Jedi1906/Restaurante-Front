@@ -1,1 +1,57 @@
-<p>actualizar-pro works!</p>
+<div class="card-top container-fluid">
+  <div class="container d-flex margenSuperior">
+    <div class="item">
+      <a [routerLink]="['/ver-producto']">
+        <i class="far fa-arrow-alt-circle-left" style="font-size: 50px;"></i>
+        <h5 class="font-subtitle">Regresar</h5>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center margenSuperior">
+  <div class="row">
+    <div class="card col-md-3">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1392f2e3-d214-440d-8a97-65e1d6f5a460/dcthdys-220ab729-bf6b-4452-8daa-f865171d1270.png/v1/fill/w_150,h_150,strp/_f2u__pastel__by_raridecor_dcthdys-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUwIiwicGF0aCI6IlwvZlwvMTM5MmYyZTMtZDIxNC00NDBkLThhOTctNjVlMWQ2ZjVhNDYwXC9kY3RoZHlzLTIyMGFiNzI5LWJmNmItNDQ1Mi04ZGFhLWY4NjUxNzFkMTI3MC5wbmciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.B3WspQri-g7lXocxD-5ZYpWsfrsW1_Alo5LNfxTog78" alt="">
+      <div class="row">
+        <div class="">
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile01">Cargar</label>
+            <input type="file" class="form-control" id="inputGroupFile01">
+          </div>
+        </div>
+        <div>
+          <div class="form-floating mb-3">
+            <input type="Text" class="form-control" id="floatingNombre" placeholder="Nombre del producto">
+            <label for="floatingNombre">Nombre</label>
+          </div>
+          <div class="form-floating">
+            <input type="Text" class="form-control" id="floatingDes" placeholder="Descripcion">
+            <label for="floatingDes">Descripcion</label>
+          </div>
+          <br>
+          <div class="form-floating mb-3">
+            <input type="Number" class="form-control" id="floatingCantidad" placeholder="Cantidad">
+            <label for="floatingCantidad">Cantidad</label>
+          </div>
+          <div class="form-floating">
+            <input type="Text" class="form-control" id="floatingEx" placeholder="Extras">
+            <label for="floatingEx">Extras</label>
+          </div>
+          <br>
+          <div class="form-floating">
+            <input type="Text" class="form-control" id="floatingCat" placeholder="Categoria">
+            <label for="floatingCat">Categoria</label>
+          </div>
+          <br>
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+          </div>
+          <button class="btn btn-outline-info"> <i class="fas fa-edit"></i> &nbsp; Guardar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

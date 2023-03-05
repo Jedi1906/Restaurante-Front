@@ -15,6 +15,10 @@ import { AgregarProComponent } from './views/adm-producto/agregar-pro/agregar-pr
 import { EliminarProComponent } from './views/adm-producto/eliminar-pro/eliminar-pro.component';
 import { ActualizarProComponent } from './views/adm-producto/actualizar-pro/actualizar-pro.component';
 import { VerProComponent } from './views/adm-producto/ver-pro/ver-pro.component';
+import { AgregarEmpComponent } from './views/adm-empleado/agregar-emp/agregar-emp.component';
+import { VerEmpComponent } from './views/adm-empleado/ver-emp/ver-emp.component';
+import { ActualizarEmpComponent } from './views/adm-empleado/actualizar-emp/actualizar-emp.component';
+import { LoginComponent } from './views/logins/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,9 @@ import { VerProComponent } from './views/adm-producto/ver-pro/ver-pro.component'
     HomeComponent,
     CarComponent,
     SoldComponent,
-    TicketsComponent, routingComponents, CardComponent, HomeAdminComponent, AgregarProComponent, EliminarProComponent, ActualizarProComponent, VerProComponent
+    TicketsComponent, routingComponents, CardComponent, HomeAdminComponent,
+    AgregarProComponent, EliminarProComponent, ActualizarProComponent, VerProComponent,
+    AgregarEmpComponent, VerEmpComponent, ActualizarEmpComponent, LoginComponent
   ],
   imports: [
     BrowserModule,

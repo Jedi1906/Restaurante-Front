@@ -1,1 +1,55 @@
-<p>agregar-pro works!</p>
+
+<div class="card-top container-fluid">
+  <div class="container d-flex margenSuperior">
+    <div class="item">
+      <a [routerLink]="['/ver-producto']">
+        <i class="far fa-arrow-alt-circle-left" style="font-size: 50px;"></i>
+        <h5 class="font-subtitle">Regresar</h5>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="container text-center">
+  <div class="row">
+      <div class="">
+        <img src="" alt="">
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupFile01">Cargar</label>
+          <input type="file" class="form-control" id="inputGroupFile01">
+        </div>
+      </div>
+      <div>
+        <div class="form-floating mb-3">
+          <input type="Text" class="form-control" id="floatingNombre" placeholder="Nombre del producto">
+          <label for="floatingNombre">Nombre</label>
+        </div>
+        <div class="form-floating">
+          <input type="Text" class="form-control" id="floatingDes" placeholder="Descripcion">
+          <label for="floatingDes">Descripcion</label>
+        </div>
+        <br>
+        <div class="form-floating mb-3">
+          <input type="Number" class="form-control" id="floatingCantidad" placeholder="Cantidad">
+          <label for="floatingCantidad">Cantidad</label>
+        </div>
+        <div class="form-floating">
+          <input type="Text" class="form-control" id="floatingEx" placeholder="Extras">
+          <label for="floatingEx">Extras</label>
+        </div>
+        <br>
+        <div class="form-floating">
+          <input type="Text" class="form-control" id="floatingCat" placeholder="Categoria">
+          <label for="floatingCat">Categoria</label>
+        </div>
+        <br>
+        <div class="input-group mb-3">
+          <span class="input-group-text">$</span>
+          <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+        </div>
+        <a [routerLink]="['']"><button class="btn btn-outline-info"> <i class="fas fa-edit"></i> &nbsp; Agregar</button></a>
+      </div>
+  </div>
+</div>
+
