@@ -1,0 +1,12 @@
+<div class="container text-center margenSuperior">
+  <div class="row">
+    <ng-container *ngFor="let item of productList">
+      <div class="card col-md-3">
+        <img src="{{item.image}}" alt="">
+        <h5 class="ngfor">{{item.title}}</h5>
+        <p class="ngfor">{{item.description}}</p>
+        <p class="text-end"><strong class="fw-bold">Precio: $ {{item.price}}</strong></p>
+      </div>
+    </ng-container>
+  </div>
+</div>
