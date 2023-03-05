@@ -1,0 +1,43 @@
+
+<div class="card-top container-fluid">
+  <div class="container d-flex margenSuperior">
+    <div class="item">
+      <a [routerLink]="['/ver-empleado']">
+        <i class="far fa-arrow-alt-circle-left" style="font-size: 50px;"></i>
+        <h5 class="font-subtitle">Regresar</h5>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container text-center margenSuperior">
+  <div class="row">
+    <div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupFile01">Cargar</label>
+        <input type="file" class="form-control" id="inputGroupFile01">
+      </div>
+      <div class="input-group">
+        <span class="input-group-text">Nombre y Apellido</span>
+        <input type="text" aria-label="Nombre" class="form-control">
+        <input type="text" aria-label="Apellido" class="form-control">
+      </div>
+      <br>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      <a [routerLink]="['']"><button class="btn btn-outline-info"> <i class="fas fa-edit"></i> &nbsp; Agregar</button></a>
+    </div>
+  </div>
+</div>
+

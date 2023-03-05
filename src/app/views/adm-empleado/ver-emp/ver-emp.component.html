@@ -1,0 +1,28 @@
+
+<div class="card-top container-fluid">
+  <div class="container d-flex margenSuperior">
+    <div class="item">
+      <a [routerLink]="['/agregar-empleado']">
+        <i class="fas fa-user-plus" style="font-size: 50px;"></i> &nbsp;
+        <h5 class="font-subtitle">Agregar empleados</h5>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center">
+  <div class="row">
+    <ng-container *ngFor="let item of productList">
+      <div class="card col-md-3">
+        <img src="{{item.image}}" alt="">
+        <h5 class="ngfor">{{item.title}}</h5>
+        <p class="ngfor">{{item.description}}</p>
+        <p class="text-end"><strong class="fw-bold">Precio: $ {{item.price}}</strong></p>
+        <a [routerLink]="['/actualizar-empleado']"><button class="btn btn-outline-info"> <i class="fas fa-user-edit"></i> &nbsp; Actualizar empleado</button></a>
+        <br>
+        <button class="btn btn-outline-info"> <i class="fas fa-user-slash"></i> &nbsp; Eliminar empleado</button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+<p>ver-emp works!</p>
