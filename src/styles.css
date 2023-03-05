@@ -33,12 +33,14 @@
     font-size: 24px;
     color: var(--color-primary);
     font-weight: 700;
+    text-align: center;
 }
 .font-subtitle{
   font-size: 20px;
-  color: var(--secundary);
+  color: #f54849;
   font-weight: 500;
 }
 .fas{
-  color: var(--color-primary) !important;
+  color: #253746;
 }
+
