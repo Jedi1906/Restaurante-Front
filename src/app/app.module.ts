@@ -19,6 +19,8 @@ import { AgregarEmpComponent } from './views/adm-empleado/agregar-emp/agregar-em
 import { VerEmpComponent } from './views/adm-empleado/ver-emp/ver-emp.component';
 import { ActualizarEmpComponent } from './views/adm-empleado/actualizar-emp/actualizar-emp.component';
 import { LoginComponent } from './views/logins/login/login.component';
+import { PedidosComponent } from './views/pedidos/pedidos.component';
+import { PedidoEstComponent } from './views/pedido-est/pedido-est.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import { LoginComponent } from './views/logins/login/login.component';
     SoldComponent,
     TicketsComponent, routingComponents, CardComponent, HomeAdminComponent,
     AgregarProComponent, EliminarProComponent, ActualizarProComponent, VerProComponent,
-    AgregarEmpComponent, VerEmpComponent, ActualizarEmpComponent, LoginComponent
+    AgregarEmpComponent, VerEmpComponent, ActualizarEmpComponent, LoginComponent, PedidosComponent, PedidoEstComponent
   ],
   imports: [
     BrowserModule,

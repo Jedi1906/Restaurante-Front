@@ -12,6 +12,8 @@ import {ActualizarEmpComponent} from "./views/adm-empleado/actualizar-emp/actual
 import {AgregarEmpComponent} from "./views/adm-empleado/agregar-emp/agregar-emp.component";
 import {VerEmpComponent} from "./views/adm-empleado/ver-emp/ver-emp.component";
 import {LoginComponent} from "./views/logins/login/login.component";
+import {PedidosComponent} from "./views/pedidos/pedidos.component";
+import {PedidoEstComponent} from "./views/pedido-est/pedido-est.component";
 
 const routes: Routes = [
   {path: '', redirectTo:'home', pathMatch:'full'},
@@ -26,7 +28,9 @@ const routes: Routes = [
   {path: 'actualizar-empleado', component: ActualizarEmpComponent, data: {title: 'Tus comprobantes'}},
   {path: 'agregar-empleado', component: AgregarEmpComponent, data: {title: 'Tus comprobantes'}},
   {path: 'ver-empleado', component: VerEmpComponent, data: {title: 'Tus comprobantes'}},
-  {path: 'login', component: LoginComponent, data: {title: 'Tus comprobantes'}},
+  {path: 'ver-empleado', component: VerEmpComponent, data: {title: 'Tus comprobantes'}},
+  {path: 'pedidos-emp', component: PedidosComponent, data: {title: 'Tus comprobantes'}},
+  {path: 'home-emp', component: PedidoEstComponent, data: {title: 'Tus comprobantes'}},
 
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
@@ -38,4 +42,5 @@ const routes: Routes = [
 export class AppRoutingModule { }
 export const routingComponents = [HomeComponent, CarComponent, SoldComponent, TicketsComponent, HomeAdminComponent,
   AgregarProComponent, VerProComponent, ActualizarProComponent,
-  AgregarEmpComponent,ActualizarEmpComponent,VerEmpComponent];
+  AgregarEmpComponent,ActualizarEmpComponent,VerEmpComponent,
+  PedidosComponent, PedidoEstComponent];

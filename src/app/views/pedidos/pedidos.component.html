@@ -1,0 +1,46 @@
+<div class="card-top container-fluid">
+  <div class="container d-flex margenSuperior">
+    <div class="item">
+      <a [routerLink]="['/home-admin']">
+        <i class="far fa-arrow-alt-circle-left" style="font-size: 50px;"></i>
+        <h5 class="font-subtitle">Regresar</h5>
+      </a>
+    </div>
+  </div>
+</div>
+<ng-container *ngIf="false">
+  <div class="container  centrar">
+    <div class="card">
+      <h5 class="card-title">No hay pedidos recientes !!!!</h5>
+    </div>
+    <div class="center">
+      <img src="assets/img/carrito_vacio.png" alt="">
+      <h4>Aun no existen pedidos :c</h4>
+    </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="true">
+  <div class="card-table centrar container">
+    <div class="cart-product">
+      <table class="table table-responsive">
+        <thead class="fw-bold" style="font-weight: bold;">
+        <tr class="fw-bold text-center">
+          <th>Folio</th>
+          <th>Descripción del pedido</th>
+          <th>Precio a pagar</th>
+          <th>Estatus</th>
+          <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody class="text-center">
+        <tr *ngFor="let item of product; let i = index;">
+          <td>{{i +1}}</td>
+          <td>{{item.total}}</td>
+          <td></td>
+          <td><button  class="btn btn-danger"><i class="fas fa-trash-alt text-white"></i></button></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-container>
