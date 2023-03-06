@@ -31,6 +31,7 @@ const routes: Routes = [
   {path: 'ver-empleado', component: VerEmpComponent, data: {title: 'Tus comprobantes'}},
   {path: 'pedidos-emp', component: PedidosComponent, data: {title: 'Tus comprobantes'}},
   {path: 'home-emp', component: PedidoEstComponent, data: {title: 'Tus comprobantes'}},
+  {path: 'login', component: LoginComponent, data: {title: 'Tus comprobantes'}},
 
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
@@ -43,4 +44,5 @@ export class AppRoutingModule { }
 export const routingComponents = [HomeComponent, CarComponent, SoldComponent, TicketsComponent, HomeAdminComponent,
   AgregarProComponent, VerProComponent, ActualizarProComponent,
   AgregarEmpComponent,ActualizarEmpComponent,VerEmpComponent,
-  PedidosComponent, PedidoEstComponent];
+  PedidosComponent, PedidoEstComponent,
+  LoginComponent];
